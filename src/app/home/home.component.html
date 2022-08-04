@@ -8,4 +8,9 @@
 <button class="test">
     <p>Đây là: {{ name }}</p>
     <p>Class: {{ class }}</p>
+    <input value="{{name}}" />
+    <br />
+    <input [value]="name" title="đây là {{class}}"/>
+    <br />
+    <input [value]="name" [title]="'đây là ' + class"/>
 </button>
